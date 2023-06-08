@@ -1,4 +1,4 @@
-// Objeto literal 1
+// Objeto literal 1 
 const celular = {
     color: "negro",
     sistema: "Android",
@@ -67,3 +67,77 @@ console.log("Su peso es: " + robot.peso + "Kg")
 console.log(robot.mover("Norte"))
 robot.cargar()
 console.log(robot.bailar("Vals"))
+
+// array de objetos
+let celulares = [
+    {
+        id: 1,
+        color: "negro",
+        sistema: "Android",
+        marca: "LG",
+
+        llamar: function() {
+            console.log("Llamando...")
+        },
+        mensajear: function() {
+            console.log("Enviando mensaje...")
+        },
+        fotografiar: function() {
+            console.log("Sacando una foto...")
+        }
+    },
+    {
+        id: 2,
+        color: "negro",
+        sistema: "Android",
+        marca: "Samsung",
+
+        llamar: function() {
+            console.log("Llamando...")
+        },
+        mensajear: function() {
+            console.log("Enviando mensaje...")
+        },
+        fotografiar: function() {
+            console.log("Sacando una foto...")
+        }
+    },
+    {
+        id: 3,
+        color: "gris",
+        sistema: "Android",
+        marca: "Nokia",
+
+        llamar: function() {
+            console.log("Llamando...")
+        },
+        mensajear: function() {
+            console.log("Enviando mensaje...")
+        }
+    },
+    {
+        id: 4,
+        color: "blanco",
+        sistema: "Android",
+        marca: "Huawei",
+
+        llamar: function() {
+            console.log("Llamando...")
+        },
+        mensajear: function() {
+            console.log("Enviando mensaje...")
+        },
+        fotografiar: function() {
+            console.log("Sacando una foto...")
+        }
+    }
+]
+
+console.log(celulares)
+console.log(celulares[0])
+console.log(celulares[0].id)
+console.log(celulares[0].marca)
+console.log(celulares[3].marca)
+celulares[3].fotografiar()
+celulares[3].llamar()
+celulares[2].mensajear()
